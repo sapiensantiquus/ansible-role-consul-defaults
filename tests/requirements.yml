@@ -1,0 +1,3 @@
+- src: git+https://github.com/mGageTechOps/ansible-role-plugin-lookup-consul.git
+  version: 0.0.2
+  name: consul_lookup

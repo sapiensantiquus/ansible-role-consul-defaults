@@ -1,0 +1,24 @@
+---
+consul_vars:
+  - key: ecs_ami
+    value: "{{ region }}/ecs/ami"
+  - key: ecs_ad_ami
+    value: "{{ region }}/ecs/ad_ami"
+  - key: aws_ansible_keypair
+    value: "{{ region }}/global/aws_ansible_keypair"
+  - key: vpc_cidr
+    value: "{{ region }}/vpc/cidr"
+  - key: vpn_cidr
+    value: "global/vpn/cidr"
+  - key: vpn_cidr_2
+    value: "global/vpn/cidr_2"
+  - key: account_id
+    value: "global/account_id"
+  - key: build_account_id
+    value: "global/build_account_id"
+  - key: vpc_internal_subnets
+    value: "vpc/internal_subnets"
+  - key: vpc_external_subnets
+    value: "vpc/external_subnets"
+  - key: vpc_id
+    value: "vpc/vpc_id"

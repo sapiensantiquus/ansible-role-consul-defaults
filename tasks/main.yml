@@ -1,0 +1,6 @@
+---
+
+- name: Set facts from default consul vars
+  set_fact:
+    "{{ item.key }}": "{{ lookup('consul_lookup','{{ item.value }} url=https://consul-{{ region }}.{{ environ }}.mgage.io:443') }}"
+  with_items: "{{ consul_vars }}"
